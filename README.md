@@ -1,2 +1,2 @@
-# final-project-team-42
-final-project-team-42 created by GitHub Classroom
+# TaHaw
+Team 42 Final Project
