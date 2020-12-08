@@ -1,0 +1,18 @@
+{
+	"ta": [
+		{
+			"name": "Bob",
+			"score": 10
+		},
+		{
+			"name": "Tim",
+			"score": 9
+		}
+	],
+	"haw": [
+		{
+			"name": "Bob",
+			"score": 5
+		}
+	]
+}
