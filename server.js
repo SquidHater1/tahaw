@@ -58,6 +58,7 @@ app.post('/:game/addScore', function(req, res, next){
 
 
 function storeScore(scoreValues, game){
+	var maxIndex = 9;
 	var scoreData = require('./scoreData.json')
 	var gameData;
 	if(game == "ta"){
@@ -66,10 +67,24 @@ function storeScore(scoreValues, game){
 		gameData = scoreData.haw;
 	}
 
-	gameData.push({
-		name: scoreValues.name,
-		score: scoreValues.score
-	});
+
+	for(var i = 0; i <= maxIndex; i++){
+		if(gameData[i] == undefined){
+			gameData[i] = {name: scoreValues.name, score: scoreValues.score};
+			break;
+		}else if(gameData[i].score < scoreValues.score){
+			for(var x = maxIndex-1; x >= i; x--){
+				gameData[x+1] = gameData[x];
+			}
+			gameData[i] = {name: scoreValues.name, score: scoreValues.score};
+			break;
+		}
+	}
+
+	//gameData.push({
+	//	name: scoreValues.name,
+	//	score: scoreValues.score
+	//});
 
 	if(game == "ta"){
 		scoreData.ta = gameData;

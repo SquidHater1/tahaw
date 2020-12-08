@@ -1,18 +1,86 @@
 {
   "ta": [
     {
+      "name": "SquidHater1",
+      "score": 12
+    },
+    {
+      "name": "Sammie",
+      "score": 11
+    },
+    {
       "name": "Bob",
+      "score": 10
+    },
+    {
+      "name": "Nat",
       "score": 10
     },
     {
       "name": "Tim",
       "score": 9
+    },
+    {
+      "name": "Ryan",
+      "score": 9
+    },
+    {
+      "name": "Nat",
+      "score": 9
+    },
+    {
+      "name": "Jackson",
+      "score": 8
+    },
+    {
+      "name": "Nat",
+      "score": 7
+    },
+    {
+      "name": "Nat",
+      "score": 6
     }
   ],
   "haw": [
     {
+      "name": "Nat",
+      "score": 12123422
+    },
+    {
+      "name": "Root",
+      "score": 27
+    },
+    {
+      "name": "Ryan",
+      "score": 13
+    },
+    {
+      "name": "Nat",
+      "score": 12
+    },
+    {
+      "name": "Nat",
+      "score": 6
+    },
+    {
+      "name": "John",
+      "score": 6
+    },
+    {
       "name": "Bob",
       "score": 5
+    },
+    {
+      "name": "Finch",
+      "score": 3
+    },
+    {
+      "name": "Finch",
+      "score": 2
+    },
+    {
+      "name": "Nat",
+      "score": 0.1
     }
   ]
 }
