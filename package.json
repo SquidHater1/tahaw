@@ -1,0 +1,29 @@
+{
+  "name": "final-project-team-42",
+  "version": "1.0.0",
+  "description": "TaHaw",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
+    "node.js": "0.0.1-security",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-f20/final-project-team-42.git"
+  },
+  "author": "Ryan Smith",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-f20/final-project-team-42/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-f20/final-project-team-42#readme"
+}
