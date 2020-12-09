@@ -10,3 +10,5 @@ function handleOptionsButtonClicked(event){
 	optionsModal.classList.remove("hidden");
 	console.log("== Options Modal Opened!");
 }
+
+createEventListeners();
