@@ -26,4 +26,16 @@ function closeOptions(){
 	console.log("== Options Modal Closed!");
 }
 
+//function updateScoreboards(){
+
+//}
+
+/*
+var loops = 0;
+setInterval(function(){
+	var titleName = document.getElementsByClassName('site-title')[0];
+	titleName.innerHTML = "TaHaw"+ loops;
+	loops += 1;
+}, 1000);
+*/
 createEventListeners();
