@@ -1,0 +1,169 @@
+body{
+	font-family:'Audiowide', sans-serif;
+	margin:0;
+	background-color:#efeff5;
+}
+
+.default_header{
+	background-color: #d7b3ff;
+	position: relative;
+	display:flex;
+	align-items:center;
+	padding:0px 0px 0px 650px;
+}
+
+.site-title{
+	color: #30304f;
+	font-size:70px;
+}
+
+.default_footer{
+	background-color:#efeff5;
+	display:inline-block;
+	vertical-align:center;
+	position:relative;
+	color:#30304f;
+	padding:10px;
+}
+
+.default_main{
+	display:flex;
+	align-items:center;
+	background-color: #efeff5;
+       	position:relative;	
+}
+
+.game_container{
+	display:inline-block;
+	height:500px;
+	width:450px;
+	margin: 20px 100px 10px 200px;
+	border:none;
+}
+
+.play_container{
+	background-color:#30304f;
+	display: flex;
+	align-items: center;
+	border-radius:3px;
+	max-width:450px;
+	padding:0px 0px 0px 150px;
+}
+
+.play_link{
+	color:#d7b3ff;
+	font-size:30px;
+}
+
+.rankings{
+	display: inline-block;
+	min-width: 400px;
+	max-width: 400px;
+	max-height: 300px;
+	margin: 10px 10px auto 10px;
+	padding 0px;
+	background-color: #e0e0eb;
+	border:none;
+}
+
+.rank{
+	max-width:400px;
+	max-height:19px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	padding:3px 10px 3px 10px;
+	border: 1px solid #30304f;
+}
+
+.rank_place{
+	font-size: 14px;
+	width: 50px;
+	color: #30304f;
+	margin:0px 50px 0px 0px;
+}
+
+#options_button{
+	position: fixed;
+	right: 30px;
+	top:80px;
+	height:50px;
+	width:50px;
+	border:none;
+	border-radius:30px;
+	background-color:#30304f;
+	display:flex;
+	align-items:center;
+	color: #e0e0eb;
+	cursor:pointer;
+
+}
+
+#option_image{
+	max-height:45px;
+	max-width:45px;
+}
+
+#modal-backdrop{
+	position:fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	z-index:1000;
+	background-color:rgba(0,0,0,0.85);	
+}
+
+#options_modal{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:1010;
+	overflow:scroll;
+}
+
+.hidden{
+	display:none;
+}
+
+.modal_contents{
+	width:auto;
+	max-width:600px;
+	min-width:300px;
+	min-height:350px;
+	margin:40px auto;
+	background-color: #efeff5; 
+	color:#30304f;
+	border-radius:10px;
+}
+
+#close_modal{
+	position:absolute;
+	right:10px;	
+	top:5px;
+	font-size:24px;
+	border:none;
+	background:none;
+	padding:0;
+	cursor:pointer;	
+}
+
+.modal_body{
+	padding:10px;
+}
+
+.option{
+	display:flex;
+	align-items:center;
+	font-size:18px;
+	margin:10px 0;
+}
+
+.option_fieldset{
+	flex: 1 100%;
+	border:1px solid #30304f;
+}
+
+

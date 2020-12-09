@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8" />
    	<title>TaHaw</title>
-   	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel"stylesheet">
-	<link src="stylesheet" href="style.css">
-	<script src="index.js" charset="utf=8" defer></script>
+   	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+		<!script src="index.js" charset="utf=8" deferi/script>
 </head>
 <body>
 	<header class="default_header">
@@ -54,7 +54,7 @@
 					<h5  class="rank_place">8</h5><span class="tap_number">N taps</span>
 				</div>
 				<div class="rank" id="Ta_9" score="score">
-					<h5  class="rank_place">9/h5><span class="tap_number">N taps</span>
+					<h5  class="rank_place">9</h5><span class="tap_number">N taps</span>
 				</div>
 
 				<div class="rank" id="Ta_10" score="score">
@@ -115,59 +115,63 @@
 
 	</main>
 	
-	<button type="button" id="options_button"><img src"#" alt="*"></button>
+	<button type="button" id="options_button"><img id="option_image" src"#" alt="*"></button>
 
 	<div id="modal-backdrop" class="hidden"></div>
 
 	<div id="options_modal" class="hidden">
-		<div class="modal-header">
-			<h3 class="modal-title">Settings</h3>
-			<button type="button" id="close_modal" class="modal_hide">&times;</button>
-		</div>
-
-		<div class="modal_body">
-			<div class="option">
-				<fieldset id="theme_fieldset" class="option_fieldset">
-					<legend>Theme</legend>
-					
-					<div>
-						<input type="radio" name="theme_option" id="theme_beaver" value="beaver">
-						<label for="theme_beaver">Beaver</label>
-					</div>
-
-					<div>
-						<input type="radio" name="theme_option" id="theme_blue" value="blue">
-						<label for="theme_blue">Blue</label>
-					</div>
-
-					<div>
-						<input type="radio" name="theme_option" id="theme_dark" value="dark">
-						<label for="theme_dark">Dark</label>
-					</div>
-
-					<div>
-						<input type="radio" name="theme_option" id="theme_default" value="default" checked>
-						<label for="theme_default">Default</label>
-					</div>
-
-					<div>
-						<input type="radio" name="theme_option" id="theme_holiday" value="holiday">
-						<label for="theme_holiday">Holiday</label>
-					</div>
-
-					<div>
-						<input type="radio" name="theme_option" id="theme_merica" value="merica">
-						<label for="theme_merica">Merica</label>
-					</div>
-
-					<div>
-						<input type="radio" name="theme_snowstorm" id="theme_snowstorm" value="snowstorm">
-						<label for="theme_snowstorm">Snow Storm</label>
-					</div>
-
-				</fieldset>
+		<div class=modal-contents>
+			<div class="modal-header">
+				<h3 class="modal-title">Settings</h3>
+				<button type="button" id="close_modal" class="modal_hide">&times;</button>
 			</div>
+
+			<div class="modal_body">
+				<div class="option">
+					<fieldset id="theme_fieldset" class="option_fieldset">
+						<legend>Theme</legend>
+					
+						<div>
+							<input type="radio" name="theme_option" id="theme_beaver" value="beaver">
+							<label for="theme_beaver">Beaver</label>
+						</div>
+
+						<div>
+							<input type="radio" name="theme_option" id="theme_blue" value="blue">
+							<label for="theme_blue">Blue</label>
+						</div>	
+
+						<div>
+							<input type="radio" name="theme_option" id="theme_dark" value="dark">
+							<label for="theme_dark">Dark</label>
+						</div>
+
+						<div>
+							<input type="radio" name="theme_option" id="theme_default" value="default" checked>
+							<label for="theme_default">Default</label>
+						</div>
+
+						<div>
+							<input type="radio" name="theme_option" id="theme_holiday" value="holiday">
+							<label for="theme_holiday">Holiday</label>
+						</div>
+
+						<div>
+							<input type="radio" name="theme_option" id="theme_merica" value="merica">
+							<label for="theme_merica">Merica</label>
+						</div>
+
+						<div>
+							<input type="radio" name="theme_snowstorm" id="theme_snowstorm" value="snowstorm">
+							<label for="theme_snowstorm">Snow Storm</label>
+						</div>
+
+					</fieldset>
+				</div>
+			</div>
+	
 		</div>
+
 	</div>
 
 	<footer class="default_footer">
