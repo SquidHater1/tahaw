@@ -15,6 +15,11 @@ body{
 .site-title{
 	color: #30304f;
 	font-size:70px;
+	cursor: pointer;
+}
+
+.home-link{
+	text-decoration: none;
 }
 
 .game-title{
@@ -34,7 +39,7 @@ body{
 	display:flex;
 	align-items:center;
 	background-color: #efeff5;
-       	position:relative;	
+    position:relative;	
 }
 
 .game_container{
