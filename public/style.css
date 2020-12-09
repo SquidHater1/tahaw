@@ -66,6 +66,11 @@ body{
 	border:none;
 }
 
+.rank_title{
+	color:#30304f;
+	margin: 0px 0px 0px 125px;
+}
+
 .rank{
 	max-width:400px;
 	max-height:19px;
@@ -81,6 +86,20 @@ body{
 	width: 50px;
 	color: #30304f;
 	margin:0px 50px 0px 0px;
+}
+
+.tap_number{
+	font-size:14px;
+	width:50px;
+	color:#30304f;
+	margin:0px 0px 0px 50px;
+}
+
+.hold_number{
+	font-size:14px;
+	width:50px;
+	color:#30304f;
+	margin:0px 0px 0px 50px;
 }
 
 #options_button{
