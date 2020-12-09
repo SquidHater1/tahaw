@@ -28,7 +28,7 @@ app.get('/:game', function(req, res, next){
 	}else{
 		next();
 	}
-	res.status(200).sendFile(path.join(__dirname+'/'+game+'.html'));
+	res.status(200).sendFile(path.join(__dirname+'/public/'+game+'.html'));
 
 });
 
