@@ -41,15 +41,17 @@ app.get('/:game', function(req, res, next){
 			ta: true
 		};
 		res.status(200).render('game',{
-			taScore: taScore
+			taScore: taScore,
+			ta: true
 		});
 	}else if(game == "haw"){
 		var hawScore={
-			hawData:scoreData.haw,
+			hawData: scoreData.haw,
 			ta: false
 		};
 		res.status(200).render('game',{
-			hawScore: hawScore	
+			hawScore: hawScore,	
+			ta: false
 		});
 	}else{
 		next();
