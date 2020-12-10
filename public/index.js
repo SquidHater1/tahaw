@@ -11,6 +11,10 @@ function createEventListeners(){
 	var closeOptionsButton = document.getElementById('close_modal');
 	closeOptionsButton.addEventListener('click', handleCloseOptionsButtonClicked);
 
+	document.getElementById('theme-update-button').addEventListener('click', function(){
+		document.body.classList.toggle('black')
+	});
+
 	//console.log("== current game: ",getGameFromURL());
 	if(getGameFromURL() == "ta"){
 		
@@ -30,24 +34,6 @@ function createEventListeners(){
 	}
 
 
-}
-
-function theme_change(){
-	document.getElementById('').addEventListener('click', function(){
-		if(){
-			document.body.classList.toggle('beaver_theme');
-		}else if(){
-			document.body.classList.toggle('blue_theme');
-		}else if(){
-			document.body.classList.toggle('dark_theme');
-		}else if(){
-			document.body.classList.toggle('default_theme');
-		}else if(){
-			document.body.classList.toggle('holiday_theme');
-		}else if(){
-			document.body.classList.toggle('merica_theme');
-		}
-	});
 }
 
 function getGameFromURL(){

@@ -18,6 +18,21 @@ body{
 	cursor: pointer;
 }
 
+#theme-update-button{
+	font-family:'Audiowide', sans-serif;
+	color: #30304f;
+	font-size: 20px;
+}
+
+.to-home{
+	color: #30304f;
+	font-size: 20px;
+	cursor: pointer;
+}
+.to-home:hover{
+	text-decoration: underline;
+}
+
 .home-link{
 	text-decoration: none;
 }
@@ -278,18 +293,4 @@ body{
 
 .modal_body{
 	padding:10px;
-}
-
-.option{
-	display:flex;
-	align-items:center;
-	font-size:18px;
-	margin:10px 0;
-}
-
-
-
-.option_fieldset{
-	flex: 1 100%;
-	border:1px solid #30304f;
 }
