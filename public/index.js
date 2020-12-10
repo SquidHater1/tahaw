@@ -161,6 +161,8 @@ function handleModalAcceptButtonClicked(){
 function openGameModal(){
 	var gameModal = document.getElementById('game_modal');
 	var modalTitle = document.getElementsByClassName('modal-title')[0];
+	var backdrop = document.getElementById('game-modal-backdrop');
+	backdrop.classList.remove('hidden');
 	modalTitle.innerHTML = "Score: " + score;
 	gameModal.classList.remove('hidden');
 }
@@ -168,6 +170,8 @@ function openGameModal(){
 function closeGameModal(){
 	timerDisplay.innerHTML = "TaHaw";
 	var gameModal = document.getElementById('game_modal');
+	var backdrop = document.getElementById('game-modal-backdrop');
+	backdrop.classList.add('hidden');
 	gameModal.classList.add('hidden');
 }
 
