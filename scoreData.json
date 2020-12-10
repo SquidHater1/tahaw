@@ -8,8 +8,14 @@
       "name": "Ryan",
       "score": 132
     },
-    null,
-    null,
+    {
+      "name": "Ryan",
+      "score": 15
+    },
+    {
+      "name": "Ryan",
+      "score": 1
+    },
     null,
     null,
     null,
@@ -20,6 +26,10 @@
   "haw": [
     {
       "name": "Ryan",
+      "score": 12.299999999999972
+    },
+    {
+      "name": "Ryan",
       "score": 7.799999999999988
     },
     {
@@ -28,7 +38,31 @@
     },
     {
       "name": "Ryan",
+      "score": 1.8000000000000005
+    },
+    {
+      "name": "Ryan",
       "score": 1.7000000000000004
+    },
+    {
+      "name": "Ryan",
+      "score": 1.2
+    },
+    {
+      "name": "Ryan",
+      "score": 0.9999999999999999
+    },
+    {
+      "name": "Ryan",
+      "score": 0.7999999999999999
+    },
+    {
+      "name": "Ryan",
+      "score": 0.7999999999999999
+    },
+    {
+      "name": "Ryan",
+      "score": 0.6
     }
   ]
 }
