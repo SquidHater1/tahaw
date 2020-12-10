@@ -26,7 +26,7 @@ function createEventListeners(){
 		hawButton.addEventListener('mouseup', handleHawGameStopped);
 		hawButton.addEventListener('mouseout', handleHawGameStopped);
 	}
-	if(getGameFromURL != null){
+	if(getGameFromURL() != null){
 		var closeGameModalButton = document.getElementById("close_game_modal");
 		var modalAcceptButton = document.getElementById("modal_accept");
 		closeGameModalButton.addEventListener('click', closeGameModal);
