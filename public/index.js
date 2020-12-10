@@ -67,7 +67,7 @@ function handleTaButtonClicked() {
 		//scoreDisplay.innerHTML = clicks;
 	}else{
 		clicks = 1;
-		timePassed = 5.00;
+		timePassed = 30.00;
 		//scoreDisplay.innerHTML = clicks;
 		gameActive = true;
 		gameTimer = setInterval(runTaTime, 100);
@@ -88,6 +88,8 @@ function stopTaGame(){
 	score = clicks;
 	clicks = 0;
 	timerDisplay.innerHTML = "0.00";
+
+	sendScoreToServer(score, "Ryan", "ta");
 	//open modal
 	//alert("Game Over! Score = " + score);
 }
@@ -109,7 +111,30 @@ function handleHawGameStopped(){
 	clearInterval(gameTimer);
 	score = timePassed;
 	timePassed = 0;
+	sendScoreToServer(score, "Ryan", "haw");
 }
+
+
+function sendScoreToServer(score, name, game){
+	var addRequest = new XMLHttpRequest();
+	var reqURL = '/' + game + '/addScore';
+	addRequest.open('POST', reqURL);
+
+
+	//var scoreReduced = score.toFixed(3);
+	//score = parseFloat(scoreReduced);
+
+	var reqBody = JSON.stringify({
+		name: name,
+		score: score
+	});
+
+	addRequest.setRequestHeader('Content-Type', 'application/json');
+	
+	addRequest.send(reqBody);
+
+}
+
 
 //function updateScoreboards(){
 
@@ -123,4 +148,6 @@ setInterval(function(){
 	loops += 1;
 }, 1000);
 */
-createEventListeners();
+function initializeSite(){
+	createEventListeners();
+}
