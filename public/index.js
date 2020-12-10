@@ -1,6 +1,5 @@
 var gameActive = false;
 var clicks = 0;
-var scoreDisplay;// = document.getElementsByClassName('site-title')[0];
 var gameTimer;
 var timerDisplay = document.getElementsByClassName('site-title')[0];
 var timePassed = 0;
@@ -97,8 +96,7 @@ function stopTaGame(){
 
 	//sendScoreToServer(score, "Ryan", "ta");
 	//open modal
-	var gameModal = document.getElementById('game_modal');
-	gameModal.classList.remove('hidden');
+	openGameModal();
 	//alert("Game Over! Score = " + score);
 }
 
@@ -118,10 +116,9 @@ function handleHawGameStopped(){
 	if(gameActive == true){
 		gameActive = false;
 		clearInterval(gameTimer);
-		score = timePassed;
+		score = parseFloat(timePassed.toFixed(1));
 		timePassed = 0;
-		var gameModal = document.getElementById('game_modal');
-		gameModal.classList.remove('hidden');
+		openGameModal();
 		//sendScoreToServer(score, "Ryan", "haw");
 	}
 }
@@ -149,10 +146,24 @@ function sendScoreToServer(score, name, game){
 
 
 function handleModalAcceptButtonClicked(){
+	var playerName = document.getElementById('player_name').value;
+	if(playerName){
+		sendScoreToServer(score, playerName, getGameFromURL());
+		closeGameModal();
+	}else{
+		alert("A Username Is Required");
+	}
+}
 
+function openGameModal(){
+	var gameModal = document.getElementById('game_modal');
+	var modalTitle = document.getElementsByClassName('modal-title')[0];
+	modalTitle.innerHTML = "Score: " + score;
+	gameModal.classList.remove('hidden');
 }
 
 function closeGameModal(){
+	timerDisplay.innerHTML = "TaHaw";
 	var gameModal = document.getElementById('game_modal');
 	gameModal.classList.add('hidden');
 }
