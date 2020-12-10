@@ -5,15 +5,15 @@ var timerDisplay = document.getElementsByClassName('site-title')[0];
 var timePassed = 0;
 var score = 0;
 function createEventListeners(){
-	var optionsButton = document.getElementById('options_button');
-	optionsButton.addEventListener('click', handleOptionsButtonClicked);
+	//var optionsButton = document.getElementById('options_button');
+	//optionsButton.addEventListener('click', handleOptionsButtonClicked);
 
-	var closeOptionsButton = document.getElementById('close_modal');
-	closeOptionsButton.addEventListener('click', handleCloseOptionsButtonClicked);
+	//var closeOptionsButton = document.getElementById('close_modal');
+	//closeOptionsButton.addEventListener('click', handleCloseOptionsButtonClicked);
 
-	document.getElementById('theme-update-button').addEventListener('click', function(){
-		document.body.classList.toggle('black')
-	});
+	//document.getElementById('theme-update-button').addEventListener('click', function(){
+	//	document.body.classList.toggle('black')
+	//});
 
 	//console.log("== current game: ",getGameFromURL());
 	if(getGameFromURL() == "ta"){
