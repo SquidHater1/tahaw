@@ -127,10 +127,10 @@ body{
 	margin: 0px 0px 0px 50px;
 	color:#efeff5;
 }
-
+/*
 .play_game_button:hover{
 	background-color:  #8181b1;
-}
+}*/
 
 .game{
 	display: inline-block;
