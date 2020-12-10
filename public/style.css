@@ -4,9 +4,7 @@ body{
 	background-color:#efeff5;
 }
 
-body.black{
-	background-color:black;
-}
+
 
 .default_header{
 	background-color: #d7b3ff;
@@ -17,9 +15,6 @@ body.black{
 	padding:auto;
 }
 
-.default_header.black{
-	background-color:gray;
-}
 
 .site-title{
 	color: #30304f;
@@ -59,10 +54,7 @@ body.black{
 	position:relative;
 	color:#30304f;
 }
-.default_footer.black{
-	background-color:black;
-	color:white;
-}
+
 
 .footer_note{
 	position: relative;
@@ -77,9 +69,6 @@ body.black{
 	position:relative;	
 }
 
-.default_main .black{
-	background-color:black;
-}
 
 
 .game_container{
@@ -110,9 +99,7 @@ body.black{
 	padding:0px 0px 0px 125px;
 	margin:0px 0px 0px 20px;
 }
-.play_container.black{
-	background-color:white;
-}
+
 
 
 .play_link{
@@ -120,9 +107,6 @@ body.black{
 	font-size:30px;
 }
 
-.play_link.black{
-	color:gray;
-}
 
 .instructions{
 	display: inline-block;
@@ -143,10 +127,11 @@ body.black{
 	margin: 0px 0px 0px 50px;
 	color:#efeff5;
 }
-.play_game.black{
-	background-color:white;
-	color:black;
+
+.play_game_button:hover{
+	background-color:  #8181b1;
 }
+
 .game{
 	display: inline-block;
 	min-width: 300px;
@@ -172,9 +157,7 @@ body.black{
 	margin: 0px 0px 0px 150px;
 }
 
-.rank_title.black{
-	color:white;
-}
+
 
 .rank{
 	max-width:400px;
@@ -186,9 +169,6 @@ body.black{
 	border: 1px solid #30304f;
 }
 
-.rank.black{
-	border:1px solid white;
-}
 
 .rank_place{
 	font-size: 14px;
@@ -197,9 +177,6 @@ body.black{
 	margin:0px 50px 0px 0px;
 }
 
-.rank_place.black{
-	color:white;
-}
 
 .center{
 	display: flex;
@@ -213,9 +190,6 @@ body.black{
 	margin:0px 0px 0px 50px;
 }
 
-.tap_number.black{
-	color:white;
-}
 
 .hold_number{
 	font-size:14px;
@@ -223,9 +197,6 @@ body.black{
 	margin:0px 0px 0px 50px;
 }
 
-.hold_number.black{
-	color:white;
-}
 
 #options_button{
 	position: fixed;
@@ -240,11 +211,6 @@ body.black{
 	align-items:center;
 	color: #30304f;
 	cursor:pointer;
-}
-
-#options_button.black{
-	background-color: white;
-	color:white;
 }
 
 #option_image{
