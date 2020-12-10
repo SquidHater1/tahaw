@@ -17,7 +17,7 @@ templates['rankings'] = template({"1":function(container,depth0,helpers,partials
         return undefined
     };
 
-  return ((stack1 = container.invokePartial(lookupProperty(partials,"rank"),(depth0 != null ? lookupProperty(depth0,"taData") : depth0),{"name":"rank","data":data,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(lookupProperty(partials,"rank"),((stack1 = (depth0 != null ? lookupProperty(depth0,"taData") : depth0)) != null ? lookupProperty(stack1,"ta") : stack1),{"name":"rank","data":data,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"4":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -35,7 +35,7 @@ templates['rankings'] = template({"1":function(container,depth0,helpers,partials
         return undefined
     };
 
-  return ((stack1 = container.invokePartial(lookupProperty(partials,"rank"),(depth0 != null ? lookupProperty(depth0,"hawData") : depth0),{"name":"rank","data":data,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(lookupProperty(partials,"rank"),((stack1 = (depth0 != null ? lookupProperty(depth0,"hawData") : depth0)) != null ? lookupProperty(stack1,"haw") : stack1),{"name":"rank","data":data,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {

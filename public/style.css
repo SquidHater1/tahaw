@@ -156,11 +156,6 @@ body{
 	color:#30304f;
 	margin:0px 0px 0px 50px;
 }
-.score{
-	font-size:14px;
-	color:#30304f;
-	margin:0px 0px 0px 50px;
-}
 
 .hold_number{
 	font-size:14px;
@@ -232,9 +227,14 @@ body{
 	display: none;
 }
 
+#modal_accept{
+	margin:0px 0px 0px 100px;
+}
+
 .modal_contents{
 	display:inline-block;
 	width:auto;
+	min-width:200px;
 	max-width:600px;
 	min-width:300px;
 	min-height:350px;
@@ -242,9 +242,21 @@ body{
 	background-color: #efeff5; 
 	color:#30304f;
 	border-radius:10px;
+	padding: 10px;
 }
 
 #close_modal{
+	position:absolute;
+	right:10px;	
+	top:5px;
+	font-size:24px;
+	border:none;
+	background:none;
+	padding:0;
+	cursor:pointer;	
+}
+
+#close_game_modal{
 	position:absolute;
 	right:10px;	
 	top:5px;

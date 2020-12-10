@@ -1,12 +1,12 @@
 <div class="rankings">
 	<h3 class="rank_title">Rankings</h3>
     {{#if ta}}
-        {{#each rank}}
-            {{> rank taData }}
+        {{#each taData}}
+            {{> rank}}
         {{/each}}
     {{else}}
-        {{#each rank}}
-            {{> rank hawData }}
+        {{#each hawData}}
+            {{> rank}}
         {{/each}}
     {{/if}}
 </div>
