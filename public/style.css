@@ -77,8 +77,27 @@ body{
 	display: inline-block;
 	min-width: 300px;
 	max-width: 300px;
-	margin: 10px 10px auto 10px;
+	margin: 10px 10px auto 100px;
 	padding: 0px;
+}
+
+.play_game_button{
+	background-color:#30304f;
+	border:none;
+	border-radius:15px;
+	max-width:150px;
+	max-height:75px;
+	min-height:75px;
+	margin: 0px 0px 0px 50px;
+	color:#efeff5;
+}
+
+#rank_container{
+	margin:0px 0px 0px 100px;
+}
+
+#play_game_container{
+	margin:0px 0px 0px 100px;
 }
 
 .game{
@@ -126,24 +145,6 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-#Ta_button{
-	height: 100px;
-	width: 100px;
-	border: none;
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-}
-
-#haw_button{
-	height: 100px;
-	width: 100px;
-	border: none;
-	display: flex;
-	align-items: center;
-	cursor: pointer;
 }
 
 .tap_number{
@@ -251,5 +252,3 @@ body{
 	flex: 1 100%;
 	border:1px solid #30304f;
 }
-
-
