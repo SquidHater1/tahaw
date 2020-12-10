@@ -117,8 +117,11 @@ function handleHawGameStopped(){
 		gameActive = false;
 		clearInterval(gameTimer);
 		score = parseFloat(timePassed.toFixed(1));
+		if(score > 0){
+			openGameModal();
+		}
 		timePassed = 0;
-		openGameModal();
+		
 		//sendScoreToServer(score, "Ryan", "haw");
 	}
 }

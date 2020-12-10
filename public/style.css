@@ -68,7 +68,6 @@ body{
 	margin:0px 0px 0px 20px;
 }
 
-
 .play_link{
 	color:#d7b3ff;
 	font-size:30px;
@@ -141,10 +140,6 @@ body{
 	width: 50px;
 	color: #30304f;
 	margin:0px 50px 0px 0px;
-}
-
-.rank_place .beaver{
-	color:#000000
 }
 
 .center{
