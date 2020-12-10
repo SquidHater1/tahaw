@@ -11,6 +11,10 @@ function createEventListeners(){
 	var closeOptionsButton = document.getElementById('close_modal');
 	closeOptionsButton.addEventListener('click', handleCloseOptionsButtonClicked);
 
+	document.getElementById('theme-update-button').addEventListener('click', function(){
+		document.body.classList.toggle('black')
+	});
+
 	//console.log("== current game: ",getGameFromURL());
 	if(getGameFromURL() == "ta"){
 		
