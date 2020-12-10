@@ -89,6 +89,7 @@ body{
 	max-width:150px;
 	max-height:75px;
 	min-height:75px;
+	min-width:150px;
 	margin: 0px 0px 0px 50px;
 	color:#efeff5;
 }
@@ -201,7 +202,26 @@ body{
 	background-color:rgba(0,0,0,0.85);	
 }
 
+#game-modal-backdrop{
+	position:fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	z-index:1000;
+	background-color:rgba(0,0,0,0.85);	
+}
+
 #options_modal{
+	position:fixed;
+	top:250px;
+	right:600px;
+	z-index:1010;
+	background-color: #efeff5;
+	overflow:scroll;
+}
+
+#game_modal{
 	position:fixed;
 	top:250px;
 	right:600px;
@@ -215,6 +235,7 @@ body{
 }
 
 .modal_contents{
+	display:inline-block;
 	width:auto;
 	max-width:600px;
 	min-width:300px;
@@ -252,6 +273,8 @@ body{
 	font-size:18px;
 	margin:10px 0;
 }
+
+
 
 .option_fieldset{
 	flex: 1 100%;

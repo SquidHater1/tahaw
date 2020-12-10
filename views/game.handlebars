@@ -28,7 +28,7 @@
                 id="haw_button"
             {{/if}}
             
-            ><img class="game_image" src="{{image_link}}" alt="game button"></button>
+            ><h2>Click!</h2></button>
         </div>
         <div class="center">
             <div class="score">
@@ -45,7 +45,10 @@
     </div>
 </main>
 
-<div id="game modal" class="hidden">
+<div id="game_modal" class="hidden">
+
+    <div id="modal-backdrop" class="hidden"></div>
+    
     <div class="modal-contents">
         <div class="modal-header">
             <h3 class="modal-title">Score: </h3>
@@ -55,7 +58,6 @@
             <label for="player_name">UserName</label>
             <input type="text" id="player_name">
         </div>
-    </div>
-    <button type="button" id="modal_accept" class="modal_hide">Submit</button>
-
+        <button type="button" id="modal_accept" class="modal_hide">Submit</button>
+     </div>
 </div>
