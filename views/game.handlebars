@@ -1,18 +1,61 @@
-<main class = default_main>
+<main class = "default_main">
     <div class="page_container" >
-        {{instructions}}
+        <div class="instructions">
+            <h2>
+                {{#if ta}}
+                    Instructions for Ta:
+                {{else}}
+                    Instructions for Haw:
+                {{/if}}
+            </h2>
+            <h3>
+                {{#if ta}}
+                    Tap the button as many times as you can in the allotted time.
+                {{else}}
+                    Hold the button for as long as you can.
+                {{/if}}
+             </h3>
+        </div>
     </div>
     <div class="page_container" id="play_game_container">
         <div class="center">
-            <button type="button" id={{game}}><img id={{image_id}} src"{{image_link}}" alt="game button"></button>
+            <h1 id="timer"></h1>
+            <button type="button" 
+
+            {{#if ta}}
+                id="ta_button"
+            {{else}}
+                id="haw_button"
+            {{/if}}
+            
+            ><img class="game_image" src="{{image_link}}" alt="game button"></button>
         </div>
         <div class="center">
             <div class="score">
-                <h3>{{score}}</h3>
+                <h3 id="score_display">Score: </h3>
             </div>
         </div>
     </div>
     <div class="page_container" id="rank_container">
-        {{rankings}}
+        {{#if ta}}
+            {{> rankings taScore}}
+        {{else}}
+            {{> rankings hawScore}}
+        {{/if}}
     </div>
 </main>
+
+<div id="game modal" class="hidden">
+    <div class="modal-contents">
+        <div class="modal-header">
+            <h3 class="modal-title">Score: </h3>
+            <button type="button" id="close_game_modal" class="modal_hide">&times;</button>
+        </div>
+        <div class="score_input_element">
+            <label for="player_name">UserName</label>
+            <input type="text" id="player_name">
+        </div>
+    </div>
+    <button type="button" id="modal_accept" class="modal_hide">Submit</button>
+
+</div>

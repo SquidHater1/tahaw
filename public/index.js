@@ -12,10 +12,10 @@ function createEventListeners(){
 	var closeOptionsButton = document.getElementById('close_modal');
 	closeOptionsButton.addEventListener('click', handleCloseOptionsButtonClicked);
 
-	
+	console.log("== current game: ",getGameFromURL());
 	if(getGameFromURL() == "ta"){
-		//console.log("== current game: ",getGameFromURL());
-		var taButton = document.getElementById('Ta_button');
+		
+		var taButton = document.getElementById('ta_button');
 		taButton.addEventListener('click', handleTaButtonClicked);
 	}else if(getGameFromURL() == "haw"){
 		var hawButton = document.getElementById('haw_button');
@@ -151,3 +151,5 @@ setInterval(function(){
 function initializeSite(){
 	createEventListeners();
 }
+
+initializeSite();

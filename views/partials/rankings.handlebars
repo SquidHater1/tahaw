@@ -1,7 +1,12 @@
 <div class="rankings">
 	<h3 class="rank_title">Rankings</h3>
-    {{#each rank}}
-        {{> rank}}
-    {{/each}}
-
+    {{#if ta}}
+        {{#each rank}}
+            {{> rank taData }}
+        {{/each}}
+    {{else}}
+        {{#each rank}}
+            {{> rank hawData }}
+        {{/each}}
+    {{/if}}
 </div>
