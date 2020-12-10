@@ -17,7 +17,7 @@
              </h3>
         </div>
     </div>
-    <div class="page_container" id="play_game_container">
+    <div class="page_container">
         <div class="center">
             <h1 id="timer"></h1>
             <button type="button" class="play_game_button"
@@ -31,7 +31,7 @@
             ><h2>Click!</h2></button>
         </div>
     </div>
-    <div class="page_container" id="rank_container">
+    <div class="page_container">
         {{#if ta}}
             {{> rankings taScore}}
         {{else}}
@@ -41,11 +41,11 @@
 </main>
 
 
-<div id="game_modal" class="hidden">
 
-    <div id="modal-backdrop" class="hidden"></div>
+
+<div id="game-modal-backdrop" class="hidden"></div>
     
-
+<div id="game_modal" class="hidden">
     <div class="modal-contents">
         <div class="modal-header">
             <h3 class="modal-title">Score: </h3>

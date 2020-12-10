@@ -9,7 +9,8 @@ body{
 	position: relative;
 	display:flex;
 	align-items:center;
-	padding:0px 0px 0px 650px;
+	justify-content: center;
+	padding:auto;
 }
 
 .site-title{
@@ -28,11 +29,18 @@ body{
 
 .default_footer{
 	background-color:#efeff5;
-	display:inline-block;
-	vertical-align:center;
+	width: 100%;
+	height: 150px;
+	display:flex;
+	align-items:center;
 	position:relative;
 	color:#30304f;
-	padding:10px;
+}
+
+.footer_note{
+	position: relative;
+	padding: 10px 10px 10px 10px;
+	margin: auto;
 }
 
 .default_main{
@@ -44,18 +52,21 @@ body{
 
 .game_container{
 	display:inline-block;
+	position: relative;
 	height:500px;
 	width:400px;
-	margin: 20px 100px 10px 200px;
+	margin: auto;
 	border:none;
+	padding: 100px 0px 0px 0px;
 }
 
 .page_container{
 	display:inline-block;
 	height: 500px;
 	width: 400px;
-	margin: 10px 10px 10px 10px;
+	margin: auto;
 	border: none;
+	padding: 100px 0px 0px 0px;
 }
 
 .play_container{
@@ -64,7 +75,7 @@ body{
 	align-items: center;
 	border-radius:3px;
 	max-width:550px;
-	padding:0px 0px 0px 150px;
+	padding:0px 0px 0px 125px;
 	margin:0px 0px 0px 20px;
 }
 
@@ -91,14 +102,6 @@ body{
 	min-width:150px;
 	margin: 0px 0px 0px 50px;
 	color:#efeff5;
-}
-
-#rank_container{
-	margin:0px 0px 0px 100px;
-}
-
-#play_game_container{
-	margin:0px 0px 0px 100px;
 }
 
 .game{
@@ -149,11 +152,6 @@ body{
 }
 
 .tap_number{
-	font-size:14px;
-	color:#30304f;
-	margin:0px 0px 0px 50px;
-}
-.score{
 	font-size:14px;
 	color:#30304f;
 	margin:0px 0px 0px 50px;
@@ -229,9 +227,14 @@ body{
 	display: none;
 }
 
+#modal_accept{
+	margin:0px 0px 0px 100px;
+}
+
 .modal_contents{
 	display:inline-block;
 	width:auto;
+	min-width:200px;
 	max-width:600px;
 	min-width:300px;
 	min-height:350px;
@@ -239,9 +242,21 @@ body{
 	background-color: #efeff5; 
 	color:#30304f;
 	border-radius:10px;
+	padding: 10px;
 }
 
 #close_modal{
+	position:absolute;
+	right:10px;	
+	top:5px;
+	font-size:24px;
+	border:none;
+	background:none;
+	padding:0;
+	cursor:pointer;	
+}
+
+#close_game_modal{
 	position:absolute;
 	right:10px;	
 	top:5px;
