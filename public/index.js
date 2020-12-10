@@ -1,9 +1,43 @@
+var gameActive = false;
+var clicks = 0;
+var scoreDisplay;// = document.getElementsByClassName('site-title')[0];
+var gameTimer;
+var timerDisplay = document.getElementsByClassName('site-title')[0];
+var timePassed = 0;
+var score = 0;
 function createEventListeners(){
 	var optionsButton = document.getElementById('options_button');
 	optionsButton.addEventListener('click', handleOptionsButtonClicked);
 
 	var closeOptionsButton = document.getElementById('close_modal');
 	closeOptionsButton.addEventListener('click', handleCloseOptionsButtonClicked);
+
+	
+	if(getGameFromURL() == "ta"){
+		//console.log("== current game: ",getGameFromURL());
+		var taButton = document.getElementById('Ta_button');
+		taButton.addEventListener('click', handleTaButtonClicked);
+	}else if(getGameFromURL() == "haw"){
+		var hawButton = document.getElementById('haw_button');
+		hawButton.addEventListener('mousedown', handleHawButtonMouseDown);
+		hawButton.addEventListener('mouseup', handleHawGameStopped);
+		hawButton.addEventListener('mouseout', handleHawGameStopped);
+	}
+
+
+}
+
+function getGameFromURL(){
+	var url = window.location.href;
+	var game;
+	//console.log("== URL: ", url);
+	if(url.includes("/ta")){
+		return "ta";
+	}else if(url.includes("/haw")){
+		return "haw";
+	}else{
+		return null;
+	}
 }
 
 function handleOptionsButtonClicked(event){
@@ -24,6 +58,57 @@ function closeOptions(){
 	backdrop.classList.add("hidden");
 	optionsModal.classList.add("hidden");
 	console.log("== Options Modal Closed!");
+}
+
+function handleTaButtonClicked() {
+	if(gameActive){
+		//alert("clicked!");
+		clicks++;
+		//scoreDisplay.innerHTML = clicks;
+	}else{
+		clicks = 1;
+		timePassed = 5.00;
+		//scoreDisplay.innerHTML = clicks;
+		gameActive = true;
+		gameTimer = setInterval(runTaTime, 100);
+	}
+}
+
+function runTaTime(){
+	timePassed -= 0.1;
+	timerDisplay.innerHTML = String(timePassed).substring(0, 4);
+	if(timePassed <= 0){
+		stopTaGame();
+	}
+}
+
+function stopTaGame(){
+	gameActive = false;
+	clearInterval(gameTimer);
+	score = clicks;
+	clicks = 0;
+	timerDisplay.innerHTML = "0.00";
+	//open modal
+	//alert("Game Over! Score = " + score);
+}
+
+function handleHawButtonMouseDown(){
+	if(!gameActive){
+		gameActive = true;
+		gameTimer = setInterval(runHawTime, 100);
+	}
+}
+
+function runHawTime(){
+	timePassed += 0.1;
+	timerDisplay.innerHTML = String(timePassed).substring(0, 4);
+}
+
+function handleHawGameStopped(){
+	gameActive = false;
+	clearInterval(gameTimer);
+	score = timePassed;
+	timePassed = 0;
 }
 
 //function updateScoreboards(){
