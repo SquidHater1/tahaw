@@ -60,7 +60,7 @@ app.get('/:game', function(req, res, next){
 });
 
 app.post('/:game/addScore', function(req, res, next){
-	console.log("== req.body: ", req.body);
+	//console.log("== req.body: ", req.body);
 	var game = req.params.game.toLowerCase();
 	if(game == "ta" || game == "haw"){
 		if (req.body && req.body.name && req.body.score){
