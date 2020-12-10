@@ -173,6 +173,7 @@ function closeGameModal(){
 	var backdrop = document.getElementById('game-modal-backdrop');
 	backdrop.classList.add('hidden');
 	gameModal.classList.add('hidden');
+	window.location.reload();
 }
 
 //function updateScoreboards(){
