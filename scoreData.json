@@ -1,26 +1,44 @@
 {
-    "ta": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-    ],
-    "haw": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-    ]
+  "ta": [
+    {
+      "name": "nat_3",
+      "score": 159
+    },
+    {
+      "name": "nat_1",
+      "score": 143
+    },
+    {
+      "name": "nat_2",
+      "score": 23
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "haw": [
+    {
+      "name": "nat_3",
+      "score": 11.4
+    },
+    {
+      "name": "nat_1",
+      "score": 0.2
+    },
+    {
+      "name": "nat_2",
+      "score": 0.1
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
 }

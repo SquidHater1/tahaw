@@ -231,6 +231,10 @@ body{
 	margin:0px 0px 0px 100px;
 }
 
+#options_modal_accept{
+	margin:0px 0px 0px 100px;
+}
+
 .modal_contents{
 	display:inline-block;
 	width:auto;
