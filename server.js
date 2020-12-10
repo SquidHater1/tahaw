@@ -28,7 +28,8 @@ app.get('/',function(req,res,next){
 	};
 	res.status(200).render('home',{
 		taScore: taScore,
-		hawScore: hawScore
+		hawScore: hawScore,
+		beaver: true
 	});
 });
 

@@ -2,11 +2,11 @@
 	<h3 class="rank_title">Rankings</h3>
     {{#if ta}}
         {{#each rank}}
-            {{> rank taData }}
+            {{> rank taData/ta }}
         {{/each}}
     {{else}}
         {{#each rank}}
-            {{> rank hawData }}
+            {{> rank hawData/haw }}
         {{/each}}
     {{/if}}
 </div>
