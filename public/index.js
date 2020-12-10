@@ -32,6 +32,24 @@ function createEventListeners(){
 
 }
 
+function theme_change(){
+	document.getElementById('').addEventListener('click', function(){
+		if(){
+			document.body.classList.toggle('beaver_theme');
+		}else if(){
+			document.body.classList.toggle('blue_theme');
+		}else if(){
+			document.body.classList.toggle('dark_theme');
+		}else if(){
+			document.body.classList.toggle('default_theme');
+		}else if(){
+			document.body.classList.toggle('holiday_theme');
+		}else if(){
+			document.body.classList.toggle('merica_theme');
+		}
+	});
+}
+
 function getGameFromURL(){
 	var url = window.location.href;
 	var game;
