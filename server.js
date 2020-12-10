@@ -9,27 +9,51 @@ var app = express();
 
 var port = process.env.PORT || 7540;
 
-app.engine('handlebars', exphbs({ default: null}));
+app.engine('handlebars', exphbs({ default: 'main'}));
 app.set('view engine', 'handlebars');
 
 
 app.use(express.json());
 app.use(express.static('public'));
 
+app.get('/',function(req,res,next){
+	var scoreData=require('./scoreData.json');
+	var taScore={
+		taData: scoreData.ta,
+		ta: true
+	};
+	var hawScore={
+		hawData:scoreData.haw,
+		ta: false
+	};
+	res.status(200).render('home',{
+		taScore: taScore,
+		hawScore: hawScore
+	});
+});
+
 app.get('/:game', function(req, res, next){
 	var scoreData = require('./scoreData.json')
 	var game = req.params.game.toLowerCase();
-	var gameData;
 	if(game == "ta"){
-		gameData = scoreData.ta;
-		console.log("== Ta Data: ", gameData);
+		var taScore={
+			taData: scoreData.ta,
+			ta: true
+		};
+		res.status(200).render('game',{
+			taScore: taScore
+		});
 	}else if(game == "haw"){
-		gameData = scoreData.haw;
-		console.log("== Haw Data: ", gameData);
+		var hawScore={
+			hawData:scoreData.haw,
+			ta: false
+		};
+		res.status(200).render('game',{
+			hawScore: hawScore	
+		});
 	}else{
 		next();
 	}
-	res.status(200).sendFile(path.join(__dirname+'/public/'+game+'.html'));
 
 });
 
