@@ -2,8 +2,20 @@
   "ta": [
     {
       "name": "Ryan",
+      "score": 150
+    },
+    {
+      "name": "Ryan",
       "score": 132
-    }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "haw": [
     {
@@ -13,6 +25,10 @@
     {
       "name": "Ryan",
       "score": 2.500000000000001
+    },
+    {
+      "name": "Ryan",
+      "score": 1.7000000000000004
     }
   ]
 }

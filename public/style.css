@@ -4,10 +4,6 @@ body{
 	background-color:#efeff5;
 }
 
-body .beaver{
-	background-color: #fff2e6;
-}
-
 .default_header{
 	background-color: #d7b3ff;
 	position: relative;
@@ -16,18 +12,10 @@ body .beaver{
 	padding:0px 0px 0px 650px;
 }
 
-.default_header .beaver{
-	background-color:#ff8000;
-}
-
 .site-title{
 	color: #30304f;
 	font-size:70px;
 	cursor: pointer;
-}
-
-.site-title .beaver{
-	color:#000000;
 }
 
 .home-link{
@@ -47,20 +35,11 @@ body .beaver{
 	padding:10px;
 }
 
-.default_footer .beaver{
-	background-color:#fff2e6;
-	color: #000000
-}
-
 .default_main{
 	display:flex;
 	align-items:center;
 	background-color: #efeff5;
     position:relative;	
-}
-
-.default_main .beaver{
-	color:#fff2e6;
 }
 
 .game_container{
@@ -89,17 +68,9 @@ body .beaver{
 	margin:0px 0px 0px 20px;
 }
 
-.play_container .beaver{
-	background-color: #000000;
-}
-
 .play_link{
 	color:#d7b3ff;
 	font-size:30px;
-}
-
-.play_link .beaver{
-	color:#ff8000;
 }
 
 .instructions{
@@ -134,10 +105,6 @@ body .beaver{
 	margin: 0px 0px 0px 150px;
 }
 
-.rank_title .beaver{
-	color:#e28c8c;
-}
-
 .rank{
 	max-width:400px;
 	max-height:19px;
@@ -148,19 +115,11 @@ body .beaver{
 	border: 1px solid #30304f;
 }
 
-.rank .beaver{
-	border: 1px solid #000000;
-}
-
 .rank_place{
 	font-size: 14px;
 	width: 50px;
 	color: #30304f;
 	margin:0px 50px 0px 0px;
-}
-
-.rank_place .beaver{
-	color:#000000
 }
 
 .center{
@@ -198,22 +157,10 @@ body .beaver{
 	margin:0px 0px 0px 50px;
 }
 
-.tap_number .beaver{
-	color: #000000;
-}
-
-.score .beaver{
-	color: #000000;
-}
-
 .hold_number{
 	font-size:14px;
 	color:#30304f;
 	margin:0px 0px 0px 50px;
-}
-
-.hold_number .beaver{
-	color: #000000;
 }
 
 #options_button{
@@ -229,11 +176,6 @@ body .beaver{
 	align-items:center;
 	color: #30304f;
 	cursor:pointer;
-}
-
-#options_button .beaver{
-	background-color: #000000;
-	color: #000000;
 }
 
 #option_image{
