@@ -4,6 +4,8 @@ body{
 	background-color:#efeff5;
 }
 
+
+
 .default_header{
 	background-color: #d7b3ff;
 	position: relative;
@@ -12,6 +14,8 @@ body{
 	justify-content: center;
 	padding:auto;
 }
+
+
 .site-title{
 	color: #30304f;
 	font-size:70px;
@@ -51,6 +55,7 @@ body{
 	color:#30304f;
 }
 
+
 .footer_note{
 	position: relative;
 	padding: 10px 10px 10px 10px;
@@ -61,8 +66,10 @@ body{
 	display:flex;
 	align-items:center;
 	background-color: #efeff5;
-    position:relative;	
+	position:relative;	
 }
+
+
 
 .game_container{
 	display:inline-block;
@@ -93,10 +100,13 @@ body{
 	margin:0px 0px 0px 20px;
 }
 
+
+
 .play_link{
 	color:#d7b3ff;
 	font-size:30px;
 }
+
 
 .instructions{
 	display: inline-block;
@@ -118,6 +128,10 @@ body{
 	color:#efeff5;
 }
 
+.play_game_button:hover{
+	background-color:  #8181b1;
+}
+
 .game{
 	display: inline-block;
 	min-width: 300px;
@@ -137,10 +151,13 @@ body{
 	border:none;
 }
 
+
 .rank_title{
 	color:#30304f;
 	margin: 0px 0px 0px 150px;
 }
+
+
 
 .rank{
 	max-width:400px;
@@ -152,12 +169,14 @@ body{
 	border: 1px solid #30304f;
 }
 
+
 .rank_place{
 	font-size: 14px;
 	width: 50px;
 	color: #30304f;
 	margin:0px 50px 0px 0px;
 }
+
 
 .center{
 	display: flex;
@@ -171,11 +190,13 @@ body{
 	margin:0px 0px 0px 50px;
 }
 
+
 .hold_number{
 	font-size:14px;
 	color:#30304f;
 	margin:0px 0px 0px 50px;
 }
+
 
 #options_button{
 	position: fixed;
@@ -237,6 +258,7 @@ body{
 	overflow:scroll;
 }
 
+
 .hidden{
 	display: none;
 }
@@ -245,8 +267,8 @@ body{
 	margin:0px 0px 0px 100px;
 }
 
-#options_modal_accept{
-	margin:0px 0px 0px 100px;
+#theme_update_button{
+	padding:0px 0px 0px 100px;
 }
 
 .modal_contents{
@@ -262,6 +284,7 @@ body{
 	border-radius:10px;
 	padding: 10px;
 }
+
 
 #close_modal{
 	position:absolute;
@@ -288,9 +311,24 @@ body{
 .modal-title{
 	text-decoration: underline;
 	font-size: 24px;
-	padding: 0px 0px 0px 50px;
+	padding: 0px 0px 0px 25px;
 }
 
 .modal_body{
 	padding:10px;
 }
+
+.option{
+	display:flex;
+	align-items:center;
+	font-size:18px;
+	margin:10px 0;
+}
+
+
+
+.option_fieldset{
+	flex: 1 100%;
+	border:1px solid #30304f;
+}
+
