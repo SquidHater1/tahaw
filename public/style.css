@@ -4,6 +4,10 @@ body{
 	background-color:#efeff5;
 }
 
+body.black{
+	background-color:black;
+}
+
 .default_header{
 	background-color: #d7b3ff;
 	position: relative;
@@ -11,6 +15,10 @@ body{
 	align-items:center;
 	justify-content: center;
 	padding:auto;
+}
+
+.default_header.black{
+	background-color:gray;
 }
 
 .site-title{
@@ -36,6 +44,10 @@ body{
 	position:relative;
 	color:#30304f;
 }
+.default_footer.black{
+	background-color:black;
+	color:white;
+}
 
 .footer_note{
 	position: relative;
@@ -47,8 +59,13 @@ body{
 	display:flex;
 	align-items:center;
 	background-color: #efeff5;
-    position:relative;	
+	position:relative;	
 }
+
+.default_main .black{
+	background-color:black;
+}
+
 
 .game_container{
 	display:inline-block;
@@ -78,10 +95,18 @@ body{
 	padding:0px 0px 0px 125px;
 	margin:0px 0px 0px 20px;
 }
+.play_container.black{
+	background-color:white;
+}
+
 
 .play_link{
 	color:#d7b3ff;
 	font-size:30px;
+}
+
+.play_link.black{
+	color:gray;
 }
 
 .instructions{
@@ -103,7 +128,10 @@ body{
 	margin: 0px 0px 0px 50px;
 	color:#efeff5;
 }
-
+.play_game.black{
+	background-color:white;
+	color:black;
+}
 .game{
 	display: inline-block;
 	min-width: 300px;
@@ -123,9 +151,14 @@ body{
 	border:none;
 }
 
+
 .rank_title{
 	color:#30304f;
 	margin: 0px 0px 0px 150px;
+}
+
+.rank_title.black{
+	color:white;
 }
 
 .rank{
@@ -138,11 +171,19 @@ body{
 	border: 1px solid #30304f;
 }
 
+.rank.black{
+	border:1px solid white;
+}
+
 .rank_place{
 	font-size: 14px;
 	width: 50px;
 	color: #30304f;
 	margin:0px 50px 0px 0px;
+}
+
+.rank_place.black{
+	color:white;
 }
 
 .center{
@@ -157,10 +198,18 @@ body{
 	margin:0px 0px 0px 50px;
 }
 
+.tap_number.black{
+	color:white;
+}
+
 .hold_number{
 	font-size:14px;
 	color:#30304f;
 	margin:0px 0px 0px 50px;
+}
+
+.hold_number.black{
+	color:white;
 }
 
 #options_button{
@@ -176,6 +225,11 @@ body{
 	align-items:center;
 	color: #30304f;
 	cursor:pointer;
+}
+
+#options_button.black{
+	background-color: white;
+	color:white;
 }
 
 #option_image{
@@ -223,6 +277,7 @@ body{
 	overflow:scroll;
 }
 
+
 .hidden{
 	display: none;
 }
@@ -231,8 +286,8 @@ body{
 	margin:0px 0px 0px 100px;
 }
 
-#options_modal_accept{
-	margin:0px 0px 0px 100px;
+#theme_update_button{
+	padding:0px 0px 0px 100px;
 }
 
 .modal_contents{
@@ -248,6 +303,7 @@ body{
 	border-radius:10px;
 	padding: 10px;
 }
+
 
 #close_modal{
 	position:absolute;
@@ -274,7 +330,7 @@ body{
 .modal-title{
 	text-decoration: underline;
 	font-size: 24px;
-	padding: 0px 0px 0px 50px;
+	padding: 0px 0px 0px 25px;
 }
 
 .modal_body{
