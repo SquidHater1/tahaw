@@ -40,9 +40,9 @@ function getGameFromURL(){
 	var url = window.location.href;
 	var game;
 	//console.log("== URL: ", url);
-	if(url.includes("/ta")){
+	if(url.includes("/game/ta")){
 		return "ta";
-	}else if(url.includes("/haw")){
+	}else if(url.includes("/game/haw")){
 		return "haw";
 	}else{
 		return null;
