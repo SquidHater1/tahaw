@@ -33,7 +33,7 @@ app.get('/',function(req,res,next){
 	});
 });
 
-app.get('/:game', function(req, res, next){
+app.get('/game/:game', function(req, res, next){
 	var scoreData = require('./scoreData.json')
 	var game = req.params.game.toLowerCase();
 	if(game == "ta"){
@@ -60,7 +60,7 @@ app.get('/:game', function(req, res, next){
 
 });
 
-app.post('/:game/addScore', function(req, res, next){
+app.post('/game/:game/addScore', function(req, res, next){
 	//console.log("== req.body: ", req.body);
 	var game = req.params.game.toLowerCase();
 	if(game == "ta" || game == "haw"){
