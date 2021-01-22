@@ -133,7 +133,7 @@ function handleHawGameStopped(){
 
 function sendScoreToServer(score, name, game){
 	var addRequest = new XMLHttpRequest();
-	var reqURL = '/' + game + '/addScore';
+	var reqURL = '/game/' + game + '/addScore';
 	addRequest.open('POST', reqURL);
 
 
